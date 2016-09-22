@@ -1,0 +1,5 @@
+@import "app/directives/sentence/sentence.css";
+
+.container{
+    margin: 100px auto;
+}

@@ -1,0 +1,16 @@
+<ul class="collapsible popout col s12 sentence-wrapper" data-collapsible="accordion" watch>
+    <li ng-repeat="(key, value) in vm.wordTypes" class="col s4 word">
+        <div tooltipped
+             data-position="top"
+             data-tooltip="{{value}}"
+             class="collapsible-header">
+            {{vm.sentence[key]}}
+        </div>
+        <div class="collapsible-body">
+            <div input-field class="edit-field">
+                <input type="text" ng-model="vm.sentence[key]" length="25">
+                <label>{{value}}</label>
+            </div>
+        </div>
+    </li>
+</ul>
